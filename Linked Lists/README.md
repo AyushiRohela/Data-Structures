@@ -1,6 +1,5 @@
 # LINKED LIST IN C
 
 Implementation of various possible functions of Linked List in C.
-So far, this folder consists of a folder a with Singly Linked List and some functions that can be implemented on singly linked list.
-
-Further it will consist of 2 more folders, one of Doubly Linked List and another of Circular Linked List.
+This folder consists of folders of 3 types of linked lists. In each folder various possbile functions that can be implemented on them are present.
+Feel free to explore them, clone them and do your little experiments on them.
