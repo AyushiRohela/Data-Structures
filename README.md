@@ -3,4 +3,7 @@
 A complete implementation of data structures in C.
 
 Data Structures implemented so far :
-- Singly linked list
+ 1) LINKED LISTS
+   -Singely Linked List
+   -Circular Linked List
+   -Doubly Linked List
