@@ -161,6 +161,24 @@ void delete(struct node **h, int n)
     free(t);
 }
 
+void reverse(struct node **h)
+{
+    struct node *t = *h;
+    struct node *p;
+    while(t->next != NULL)
+    {
+        t = t->next;
+    }
+    *h = t;
+    while(t!= NULL)
+    {
+        p = t->next;
+        t->next= t->prev;
+        t->prev = p;
+        t = t->next;
+    }
+}
+
 void printList(struct node *h)
 {
 	struct node *t = h;
@@ -184,7 +202,7 @@ int main()
 	do
 	{
 		printf("Choose options:\n");
-		printf("0 to exit\n1 for insertion at head\n2 for insertion at the end\n3 for insertion after a given node\n4 for insertion after a before node\n5 for deletion\n6 for displaying list\n");
+		printf("0 to exit\n1 for insertion at head\n2 for insertion at the end\n3 for insertion after a given node\n4 for insertion after a before node\n5 for deletion\n6 for reversing\n7 for displaying list\n");
 		scanf("%d",&ch);
 		switch(ch){
 			case 0:
@@ -211,6 +229,9 @@ int main()
                 delete(&head,n);
                 break;
             case 6:
+                reverse(&head);
+                break;
+            case 7:
                 printList(head);
             	break;
             default:
